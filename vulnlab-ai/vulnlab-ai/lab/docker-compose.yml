@@ -1,0 +1,9 @@
+services:
+  vuln-lab:
+    build: .
+    environment:
+      - LAB_HOST=0.0.0.0      # 컨테이너 내부에서만 0.0.0.0
+      - LAB_PORT=8080
+    ports:
+      - "127.0.0.1:8080:8080"  # 호스트에서는 루프백으로만 노출 (외부 접근 차단)
+    restart: "no"

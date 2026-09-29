@@ -1,0 +1,2 @@
+requests>=2.31
+flask>=3.0  # 실습 서버(lab) 로컬 실행용. Docker로만 돌리면 없어도 됨
